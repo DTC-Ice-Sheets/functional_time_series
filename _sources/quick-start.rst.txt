@@ -39,7 +39,7 @@ repository includes a GRF output GeoZarr that can be used as input:
       --data_path tests/test_data/test_inputs/watson_runoff_racmo55_grf_output.zarr \
       --output_path output/watson_runoff_racmo55_fts.zarr
 
-The input path may be a local path or an ``http://`` or ``https://`` URL. The
+The input path may be a local path or a URL for a publicly available Zarr store. The
 output is written to a local GeoZarr store. The FTS output contains one
 variable for each analyzed input variable, with dimensions ``curve_id`` and
 ``coef_id``, plus the spatial reference.
