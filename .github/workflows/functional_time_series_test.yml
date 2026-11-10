@@ -1,0 +1,16 @@
+# When pushing to a branch, test
+# When adapting this template for your own use, please rename "functional_time_series" to your package name.
+name: functional_time_series_test
+
+on:
+  push:
+    branches-ignore:
+      - main  # all branches except main (and implicitly not tags)
+
+jobs:
+  test:
+    uses: ./.github/workflows/generic_test.yml
+    with:
+      package_name: functional_time_series
+      notebooks_allowed: true
+    secrets: inherit
