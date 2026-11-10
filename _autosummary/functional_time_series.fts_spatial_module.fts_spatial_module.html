@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>functional_time_series.fts_spatial_module.fts_spatial_module &mdash; Functional Time Series  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94c7bfb3" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="functional_time_series.fts_spatial_module.hdfpca" href="functional_time_series.fts_spatial_module.hdfpca.html" />
+    <link rel="prev" title="functional_time_series.fts_spatial_module" href="functional_time_series.fts_spatial_module.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Functional Time Series
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="functional_time_series.html">functional_time_series</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.fts_spatial_entrypoint.html">functional_time_series.fts_spatial_entrypoint</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="functional_time_series.fts_spatial_module.html">functional_time_series.fts_spatial_module</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">functional_time_series.fts_spatial_module.fts_spatial_module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="functional_time_series.fts_spatial_module.hdfpca.html">functional_time_series.fts_spatial_module.hdfpca</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.helpers.html">functional_time_series.helpers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.monitoring.html">functional_time_series.monitoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Functional Time Series</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="functional_time_series.html">functional_time_series</a></li>
+          <li class="breadcrumb-item"><a href="functional_time_series.fts_spatial_module.html">functional_time_series.fts_spatial_module</a></li>
+      <li class="breadcrumb-item active">functional_time_series.fts_spatial_module.fts_spatial_module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/_autosummary/functional_time_series.fts_spatial_module.fts_spatial_module.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-functional_time_series.fts_spatial_module.fts_spatial_module">
+<span id="functional-time-series-fts-spatial-module-fts-spatial-module"></span><h1>functional_time_series.fts_spatial_module.fts_spatial_module<a class="headerlink" href="#module-functional_time_series.fts_spatial_module.fts_spatial_module" title="Link to this heading"></a></h1>
+<p>Functional Time Series (FTS) module.</p>
+<p class="rubric">Classes</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule" title="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FtsSpatialModule</span></code></a>()</p></td>
+<td><p>FTS module: compresses each point's time series into curve coefficients.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">FtsSpatialModule</span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FTS module: compresses each point’s time series into curve coefficients.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">as_point_cloud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dataset</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dataset</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud" title="Link to this definition"></a></dt>
+<dd><p>Flatten a gridded dataset into the point cloud form this module analyses.</p>
+<p>The GRF module interpolates its fit onto a regular grid before saving, so its published output has
+the dimensions (“time”, “x”, “y”) rather than (“time”, “point_id”). Without this step
+<a class="reference internal" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.spatial_variables" title="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.spatial_variables"><code class="xref py py-func docutils literal notranslate"><span class="pre">spatial_variables()</span></code></a> matches nothing, every variable is dropped, and the result is an empty
+dataset with no warning. Cells outside the fitted area are NaN and a curve cannot be built across a
+gap, so a point is kept only where every variable is finite at every timestep.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ds</strong> (<em>xr.Dataset</em>) – The input dataset, either already a point cloud carrying a “point_id” dimension, or a grid
+carrying x and y dimensions under those names or the old
+“projection_x_coordinate” and “projection_y_coordinate”.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The same data with the two spatial dimensions stacked into “point_id”, any variable that is
+empty at a whole timestep removed, and the points that are not finite throughout the record
+removed. A dataset that is already a point cloud, or that is neither form, is returned
+unchanged.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>xr.Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.run_spatial_analysis">
+<span class="sig-name descname"><span class="pre">run_spatial_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve_time_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_pca</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dataset</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.run_spatial_analysis" title="Link to this definition"></a></dt>
+<dd><p>Run spatial analysis on the given dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> (<em>xr.Dataset</em>) – <p>The input dataset for analysis.
+This must have the following dimensions:</p>
+<blockquote>
+<div><ul>
+<li><p>time</p></li>
+<li><p>point_id (flattened spatial coordinates)</p></li>
+</ul>
+</div></blockquote>
+<p>Each of the spatial variables with dimensions (“time”, “point_id”) will be analyzed.
+A gridded dataset with x and y dimensions in place of point_id is accepted too, and is
+flattened by <a class="reference internal" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud" title="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud"><code class="xref py py-func docutils literal notranslate"><span class="pre">as_point_cloud()</span></code></a> first.</p>
+</p></li>
+<li><p><strong>curve_time_points</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of time points to be considered as a single curve</p></li>
+<li><p><strong>num_pca</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of principal components to retain. Only the first feeds the second step, so this does
+not change the result.</p></li>
+<li><p><strong>num_factors</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of factors to retain in the second step dimension reduction</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The output dataset containing the model results, with dimensions:</dt><dd><ul class="simple">
+<li><p>curve_id (length equal to the number of time points divided by curve_time_points, rounded down)</p></li>
+<li><p>coef_id (length equal to num_factors)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Each of the input spatial variables will have a corresponding variable of the same name, with dimensions
+(“curve_id”, “coef_id”).
+The input spatial_ref variable and its CRS metadata are preserved as a coordinate, if present.
+Any other input variables will be discarded.</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>xr.Dataset</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the dataset holds no variable this module can analyse. Returning an empty dataset instead
+    would record the run as a success and leave the caller with a store holding no data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.spatial_variables">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">spatial_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dataset</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.spatial_variables" title="Link to this definition"></a></dt>
+<dd><p>Names of the variables to analyse: those with exactly the dimensions time and point_id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ds</strong> (<em>xr.Dataset</em>) – The input dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Names of the variables with dimensions (“time”, “point_id”), in dataset order.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.whole_curves">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">whole_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve_time_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'data'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.whole_curves" title="Link to this definition"></a></dt>
+<dd><p>Truncate the time axis to a whole number of curves.</p>
+<p>Every curve needs exactly curve_time_points values, so any time steps left over after the last
+whole curve are dropped, with a warning.</p>
+<p>This matches hdftsa as called from R. There, <code class="docutils literal notranslate"><span class="pre">matrix(Coeff[k,</span> <span class="pre">],</span> <span class="pre">delta,</span> <span class="pre">nn)</span></code> with a non-whole
+<code class="docutils literal notranslate"><span class="pre">nn</span> <span class="pre">=</span> <span class="pre">tt/delta</span></code> rounds the number of curves down and drops the same trailing values, so the
+result is identical. The differences are that R does it silently apart from one R warning per
+point, while this logs a single warning per variable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>np.ndarray</em>) – Array of shape (n_points, n_times).</p></li>
+<li><p><strong>curve_time_points</strong> (<em>int</em>) – Number of time points in one curve.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Variable name, used only in the warning.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The input, truncated to the first whole number of curves along the time axis.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="functional_time_series.fts_spatial_module.html" class="btn btn-neutral float-left" title="functional_time_series.fts_spatial_module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="functional_time_series.fts_spatial_module.hdfpca.html" class="btn btn-neutral float-right" title="functional_time_series.fts_spatial_module.hdfpca" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

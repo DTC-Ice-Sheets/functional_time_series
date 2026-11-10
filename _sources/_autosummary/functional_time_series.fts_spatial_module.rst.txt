@@ -1,0 +1,14 @@
+functional\_time\_series.fts\_spatial\_module
+=============================================
+
+.. automodule:: functional_time_series.fts_spatial_module
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   fts_spatial_module
+   hdfpca

@@ -1,0 +1,12 @@
+functional\_time\_series.monitoring
+===================================
+
+.. automodule:: functional_time_series.monitoring
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      setup_logging
+   

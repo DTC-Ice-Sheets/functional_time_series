@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>functional_time_series.fts_spatial_module.hdfpca &mdash; Functional Time Series  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94c7bfb3" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="functional_time_series.helpers" href="functional_time_series.helpers.html" />
+    <link rel="prev" title="functional_time_series.fts_spatial_module.fts_spatial_module" href="functional_time_series.fts_spatial_module.fts_spatial_module.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Functional Time Series
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="functional_time_series.html">functional_time_series</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.fts_spatial_entrypoint.html">functional_time_series.fts_spatial_entrypoint</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="functional_time_series.fts_spatial_module.html">functional_time_series.fts_spatial_module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="functional_time_series.fts_spatial_module.fts_spatial_module.html">functional_time_series.fts_spatial_module.fts_spatial_module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">functional_time_series.fts_spatial_module.hdfpca</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.helpers.html">functional_time_series.helpers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functional_time_series.monitoring.html">functional_time_series.monitoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Functional Time Series</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="functional_time_series.html">functional_time_series</a></li>
+          <li class="breadcrumb-item"><a href="functional_time_series.fts_spatial_module.html">functional_time_series.fts_spatial_module</a></li>
+      <li class="breadcrumb-item active">functional_time_series.fts_spatial_module.hdfpca</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/_autosummary/functional_time_series.fts_spatial_module.hdfpca.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-functional_time_series.fts_spatial_module.hdfpca">
+<span id="functional-time-series-fts-spatial-module-hdfpca"></span><h1>functional_time_series.fts_spatial_module.hdfpca<a class="headerlink" href="#module-functional_time_series.fts_spatial_module.hdfpca" title="Link to this heading"></a></h1>
+<p>NumPy port of the part of <code class="docutils literal notranslate"><span class="pre">hdfpca</span></code> from the R package hdftsa that the FTS module uses.</p>
+<p><code class="docutils literal notranslate"><span class="pre">hdfpca</span></code> (Gao, Shang and Yang, 2019) reduces a panel of functional time series in two steps. First, each point’s
+series of curves is reduced by dynamic functional principal component analysis (<code class="docutils literal notranslate"><span class="pre">dfpca</span></code>), which takes the
+eigenvectors of a long-run covariance rather than of the plain covariance. Second, the scores of the first principal
+component from every point are stacked side by side and reduced again (<code class="docutils literal notranslate"><span class="pre">hdpca</span></code>), this time using the eigenvectors of
+a sum of lagged autocovariance products. The FTS module keeps only the scores from that second step, so this port
+stops there and leaves out the rest of <code class="docutils literal notranslate"><span class="pre">hdfpca</span></code> and the forecast that <code class="docutils literal notranslate"><span class="pre">forecast.hdfpca</span></code> builds on top of it.</p>
+<p>The sources ported are <code class="docutils literal notranslate"><span class="pre">hdfpca.R</span></code>, <code class="docutils literal notranslate"><span class="pre">dfpca.R</span></code>, <code class="docutils literal notranslate"><span class="pre">hdpca.R</span></code> and <code class="docutils literal notranslate"><span class="pre">wtflat.R</span></code> from hdftsa 1.1.</p>
+<p class="rubric">Functions</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.column_space_factor_directions" title="functional_time_series.fts_spatial_module.hdfpca.column_space_factor_directions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">column_space_factor_directions</span></code></a>(centred, order)</p></td>
+<td><p>Leading eigenvectors of hdpca's <code class="docutils literal notranslate"><span class="pre">f</span></code>, built directly as R builds it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.descending_eigenvectors" title="functional_time_series.fts_spatial_module.hdfpca.descending_eigenvectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">descending_eigenvectors</span></code></a>(matrix, order)</p></td>
+<td><p>Eigenvectors of the leading <cite>order</cite> eigenvalues of one or more symmetric matrices, largest first.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.dynamic_fpca_scores" title="functional_time_series.fts_spatial_module.hdfpca.dynamic_fpca_scores"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dynamic_fpca_scores</span></code></a>(curves, order)</p></td>
+<td><p>Principal component scores of each point's curves, ported from hdftsa's <code class="docutils literal notranslate"><span class="pre">dfpca</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.factor_scores" title="functional_time_series.fts_spatial_module.hdfpca.factor_scores"><code class="xref py py-obj docutils literal notranslate"><span class="pre">factor_scores</span></code></a>(x, order)</p></td>
+<td><p>Scores of the leading factors of a panel of series, ported from the <code class="docutils literal notranslate"><span class="pre">coef</span></code> that hdftsa's <code class="docutils literal notranslate"><span class="pre">hdpca</span></code> returns.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.flat_top_weight" title="functional_time_series.fts_spatial_module.hdfpca.flat_top_weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flat_top_weight</span></code></a>(x[, c])</p></td>
+<td><p>Flat-top kernel weight, ported from hdftsa's <code class="docutils literal notranslate"><span class="pre">wtflat</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.hdfpca_factor_scores" title="functional_time_series.fts_spatial_module.hdfpca.hdfpca_factor_scores"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hdfpca_factor_scores</span></code></a>(data, ...)</p></td>
+<td><p>Compute the factor scores of the first principal component, as <code class="docutils literal notranslate"><span class="pre">hdfpca(...)$model$model2[[1]]$coef</span></code> in hdftsa.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#functional_time_series.fts_spatial_module.hdfpca.row_space_factor_directions" title="functional_time_series.fts_spatial_module.hdfpca.row_space_factor_directions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">row_space_factor_directions</span></code></a>(centred, order)</p></td>
+<td><p>Leading eigenvectors of hdpca's <code class="docutils literal notranslate"><span class="pre">f</span></code>, found without building <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.column_space_factor_directions">
+<span class="sig-name descname"><span class="pre">column_space_factor_directions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.column_space_factor_directions" title="Link to this definition"></a></dt>
+<dd><p>Leading eigenvectors of hdpca’s <code class="docutils literal notranslate"><span class="pre">f</span></code>, built directly as R builds it.</p>
+<p><code class="docutils literal notranslate"><span class="pre">f</span></code> is the sum over lags 1 to 5 of <code class="docutils literal notranslate"><span class="pre">C_h</span> <span class="pre">C_hᵀ</span></code>, where <code class="docutils literal notranslate"><span class="pre">C_h</span></code> is the lag-h autocovariance between columns, so
+it is n_columns square. That is cheap when there are few columns.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>centred</strong> (<em>np.ndarray</em>) – Array of shape (n_rows, n_columns), with each column’s mean removed.</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – Number of eigenvectors to keep.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (n_columns, order), one eigenvector per column.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.descending_eigenvectors">
+<span class="sig-name descname"><span class="pre">descending_eigenvectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.descending_eigenvectors" title="Link to this definition"></a></dt>
+<dd><p>Eigenvectors of the leading <cite>order</cite> eigenvalues of one or more symmetric matrices, largest first.</p>
+<p>Like R’s <code class="docutils literal notranslate"><span class="pre">eigen(symmetric</span> <span class="pre">=</span> <span class="pre">TRUE)</span></code>, only the lower triangle is read.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>matrix</strong> (<em>np.ndarray</em>) – Array of shape (…, n, n).</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – Number of eigenvectors to keep.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (…, n, order), one eigenvector per column.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.dynamic_fpca_scores">
+<span class="sig-name descname"><span class="pre">dynamic_fpca_scores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curves</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.dynamic_fpca_scores" title="Link to this definition"></a></dt>
+<dd><p>Principal component scores of each point’s curves, ported from hdftsa’s <code class="docutils literal notranslate"><span class="pre">dfpca</span></code>.</p>
+<p>R loops over every lag and multiplies its autocovariance by the kernel weight, so it builds lags whose weight is
+zero. Those lags are skipped here, which leaves roughly the square root of the number of curves to compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>curves</strong> (<em>np.ndarray</em>) – Array of shape (n_points, n_curves, curve_time_points).</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – Number of principal components to keep.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (n_points, n_curves, order).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.factor_scores">
+<span class="sig-name descname"><span class="pre">factor_scores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.factor_scores" title="Link to this definition"></a></dt>
+<dd><p>Scores of the leading factors of a panel of series, ported from the <code class="docutils literal notranslate"><span class="pre">coef</span></code> that hdftsa’s <code class="docutils literal notranslate"><span class="pre">hdpca</span></code> returns.</p>
+<p>R takes the eigenvectors of <code class="docutils literal notranslate"><span class="pre">f</span></code>, a matrix that is n_columns square. A column here is a spatial point, so for a
+grid <code class="docutils literal notranslate"><span class="pre">f</span></code> can have tens of thousands of rows, while a row is a curve, of which there are usually few. The
+eigenvectors are therefore found from whichever of the columns or the rows is smaller; both give the same result.</p>
+<p>An eigenvector’s sign is arbitrary, and R and NumPy may pick differently, so each column of scores is flipped to
+make its largest-magnitude entry positive. R’s result therefore agrees with this one up to the sign of each column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>np.ndarray</em>) – Array of shape (n_rows, n_columns): one row per time step, one column per series.</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – Number of factors to keep.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (n_rows, order).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If there are too few rows for the lags summed, or more factors are asked for than the data can supply.
+    hdftsa stops with “subscript out of bounds” for too few rows, or for more factors than columns. Given more
+    factors than rows but no more than columns, it returns scores along eigenvectors whose eigenvalue is zero,
+    which are arbitrary; this refuses that case too.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.flat_top_weight">
+<span class="sig-name descname"><span class="pre">flat_top_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.flat_top_weight" title="Link to this definition"></a></dt>
+<dd><p>Flat-top kernel weight, ported from hdftsa’s <code class="docutils literal notranslate"><span class="pre">wtflat</span></code>.</p>
+<p>The weight is 1 on (-c, c) and falls linearly to 0 at -1 and 1. The R function uses a strict <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">&lt;</span> <span class="pre">x</span></code> on its
+rising edge, so <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">c</span></code> falls through to 0 while <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">-c</span></code> gives 1. The quirk is kept so that results match
+R exactly; it only matters when the number of curves is four times a square.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – Point at which to evaluate the kernel.</p></li>
+<li><p><strong>c</strong> (<em>float</em><em>, </em><em>optional</em>) – Half-width of the flat top.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The kernel weight at <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.hdfpca_factor_scores">
+<span class="sig-name descname"><span class="pre">hdfpca_factor_scores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve_time_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_pca</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.hdfpca_factor_scores" title="Link to this definition"></a></dt>
+<dd><p>Compute the factor scores of the first principal component, as <code class="docutils literal notranslate"><span class="pre">hdfpca(...)$model$model2[[1]]$coef</span></code> in hdftsa.</p>
+<p>Only the first principal component of each point feeds the second step, so <cite>num_pca</cite> does not change the result
+beyond needing to be at least 1. The data is converted to float64 first, as R works in double precision whatever
+the input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>np.ndarray</em>) – Array of shape (n_points, n_times), with n_times a whole multiple of <cite>curve_time_points</cite>.</p></li>
+<li><p><strong>curve_time_points</strong> (<em>int</em>) – Number of time points in one curve.</p></li>
+<li><p><strong>num_pca</strong> (<em>int</em>) – Number of principal components to keep in the first step.</p></li>
+<li><p><strong>num_factors</strong> (<em>int</em>) – Number of factors to keep in the second step.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (n_curves, num_factors).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="functional_time_series.fts_spatial_module.hdfpca.row_space_factor_directions">
+<span class="sig-name descname"><span class="pre">row_space_factor_directions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">centred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#functional_time_series.fts_spatial_module.hdfpca.row_space_factor_directions" title="Link to this definition"></a></dt>
+<dd><p>Leading eigenvectors of hdpca’s <code class="docutils literal notranslate"><span class="pre">f</span></code>, found without building <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<p>Each <code class="docutils literal notranslate"><span class="pre">C_h</span> <span class="pre">C_hᵀ</span></code> in <code class="docutils literal notranslate"><span class="pre">f</span></code> equals <code class="docutils literal notranslate"><span class="pre">centredᵀ</span> <span class="pre">M_h</span> <span class="pre">centred</span></code> for a matrix <code class="docutils literal notranslate"><span class="pre">M_h</span></code> that is only n_rows square, so
+<code class="docutils literal notranslate"><span class="pre">f</span></code> is <code class="docutils literal notranslate"><span class="pre">Zᵀ</span> <span class="pre">Z</span></code> for a <code class="docutils literal notranslate"><span class="pre">Z</span></code> with n_rows rows, and its eigenvectors are the right singular vectors of <code class="docutils literal notranslate"><span class="pre">Z</span></code>. That
+is cheap when there are few rows, which for a grid of points is the usual case.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>centred</strong> (<em>np.ndarray</em>) – Array of shape (n_rows, n_columns), with each column’s mean removed.</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – Number of eigenvectors to keep.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Array of shape (n_columns, order), one eigenvector per column.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="functional_time_series.fts_spatial_module.fts_spatial_module.html" class="btn btn-neutral float-left" title="functional_time_series.fts_spatial_module.fts_spatial_module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="functional_time_series.helpers.html" class="btn btn-neutral float-right" title="functional_time_series.helpers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

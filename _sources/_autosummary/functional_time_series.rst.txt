@@ -1,0 +1,16 @@
+﻿functional\_time\_series
+========================
+
+.. automodule:: functional_time_series
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   fts_spatial_entrypoint
+   fts_spatial_module
+   helpers
+   monitoring

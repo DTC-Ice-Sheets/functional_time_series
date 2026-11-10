@@ -1,0 +1,18 @@
+functional\_time\_series.fts\_spatial\_module.hdfpca
+====================================================
+
+.. automodule:: functional_time_series.fts_spatial_module.hdfpca
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      column_space_factor_directions
+      descending_eigenvectors
+      dynamic_fpca_scores
+      factor_scores
+      flat_top_weight
+      hdfpca_factor_scores
+      row_space_factor_directions
+   

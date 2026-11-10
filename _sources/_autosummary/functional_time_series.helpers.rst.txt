@@ -1,0 +1,22 @@
+functional\_time\_series.helpers
+================================
+
+.. automodule:: functional_time_series.helpers
+
+   
+   .. rubric:: Module Attributes
+
+   .. autosummary::
+   
+      ZarrType
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      path_or_web_url_validator
+      prepare_cf_data_variable_arrays
+      prepare_cf_spatial_data_array
+      prepare_cf_time_data_array
+      save_geo_zarr
+   

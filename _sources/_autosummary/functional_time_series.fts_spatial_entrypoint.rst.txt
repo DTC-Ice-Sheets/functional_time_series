@@ -1,0 +1,12 @@
+functional\_time\_series.fts\_spatial\_entrypoint
+=================================================
+
+.. automodule:: functional_time_series.fts_spatial_entrypoint
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      main
+   
