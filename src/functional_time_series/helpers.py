@@ -60,7 +60,7 @@ def save_geo_zarr(ds: xr.Dataset, zarr_path: Path | str, target_chunk_size: str 
         including having a `spatial_ref` attribute with a valid CRS.
     zarr_path: Path | str
         Full path of the output .zarr file to be created.
-    target_chunk_size: str, optional
+    target_chunk_size: str
         The target chunk size for the GeoZarr dataset, by default "1024MB".
     """
     ds = ds.rio.write_crs(ds["spatial_ref"].attrs["crs_wkt"], grid_mapping_name="spatial_ref")

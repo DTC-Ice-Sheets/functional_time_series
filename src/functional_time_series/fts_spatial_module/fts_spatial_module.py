@@ -110,7 +110,7 @@ class FtsSpatialModule:
             Array of shape (n_points, n_times).
         curve_time_points : int
             Number of time points in one curve.
-        name : str, optional
+        name : str
             Variable name, used only in the warning.
 
         Returns
@@ -152,12 +152,12 @@ class FtsSpatialModule:
             Each of the spatial variables with dimensions ("time", "point_id") will be analyzed.
             A gridded dataset with x and y dimensions in place of point_id is accepted too, and is
             flattened by :func:`as_point_cloud` first.
-        curve_time_points : int, optional
+        curve_time_points : int
             Number of time points to be considered as a single curve
-        num_pca : int, optional
+        num_pca : int
             Number of principal components to retain. Only the first feeds the second step, so this does
             not change the result.
-        num_factors: int, optional
+        num_factors: int
             Number of factors to retain in the second step dimension reduction
 
         Returns

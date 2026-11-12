@@ -31,12 +31,12 @@ def main(
         Path of the input GeoZarr file.
     output_path : Path
         Path of the output GeoZarr file.
-    curve_time_points : int, optional
+    curve_time_points : int
         Number of time points to be considered as a single curve
-    num_pca : int, optional
+    num_pca : int
         Number of principal components to retain. Only the first feeds the second step, so this does not
         change the result.
-    num_factors: int, optional
+    num_factors: int
         Number of factors to retain in the second step dimension reduction
     """
     setup_logging()
