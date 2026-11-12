@@ -3,8 +3,8 @@ Overview
 
 The Functional Time Series (FTS) module compresses a panel of space-time
 ice-sheet data into a few coefficients per cycle. Much of what an ice sheet
-does is seasonal — melt begins, peaks and ends; lakes fill and drain; runoff
-rises and falls — and a list of monthly values describes that clumsily,
+does is seasonal - melt begins, peaks and ends; lakes fill and drain; runoff
+rises and falls - and a list of monthly values describes that clumsily,
 treating each month as an independent number when what distinguishes one season
 from another is largely the shape of the curve those months trace out.
 
@@ -32,7 +32,7 @@ The second stage works across space. The leading score from every point is
 stacked side by side and reduced again, using the eigenvectors of a sum of
 lagged autocovariance products across the whole panel. Serial dependence drives
 this stage too; it is not a purely spatial decomposition. The module keeps the
-scores from this second stage and stops there — the rest of ``hdfpca``, and the
+scores from this second stage and stops there - the rest of ``hdfpca``, and the
 forecasting the R package builds on top of it, are not ported.
 
 The resulting **coefficients are weights on shared patterns, not physical
