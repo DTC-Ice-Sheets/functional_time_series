@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "functional_time_series"
-version = "0.0.1"
+version = "0.0.2"
 description = "DTC-IS module that reduces a panel of space-time ice-sheet data to a few coefficients per cycle, compressing seasonal variation into a form usable as a predictor."
 authors = [
     "Amber Leeson <a.leeson@lancaster.ac.uk>",
