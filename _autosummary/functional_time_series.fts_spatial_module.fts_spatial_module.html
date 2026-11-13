@@ -144,30 +144,26 @@ unchanged.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>ds</strong> (<em>xr.Dataset</em>) – <p>The input dataset for analysis.
 This must have the following dimensions:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>time</p></li>
 <li><p>point_id (flattened spatial coordinates)</p></li>
 </ul>
-</div></blockquote>
 <p>Each of the spatial variables with dimensions (“time”, “point_id”) will be analyzed.
 A gridded dataset with x and y dimensions in place of point_id is accepted too, and is
 flattened by <a class="reference internal" href="#functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud" title="functional_time_series.fts_spatial_module.fts_spatial_module.FtsSpatialModule.as_point_cloud"><code class="xref py py-func docutils literal notranslate"><span class="pre">as_point_cloud()</span></code></a> first.</p>
 </p></li>
-<li><p><strong>curve_time_points</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of time points to be considered as a single curve</p></li>
-<li><p><strong>num_pca</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of principal components to retain. Only the first feeds the second step, so this does
+<li><p><strong>curve_time_points</strong> (<em>int</em>) – Number of time points to be considered as a single curve</p></li>
+<li><p><strong>num_pca</strong> (<em>int</em>) – Number of principal components to retain. Only the first feeds the second step, so this does
 not change the result.</p></li>
-<li><p><strong>num_factors</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of factors to retain in the second step dimension reduction</p></li>
+<li><p><strong>num_factors</strong> (<em>int</em>) – Number of factors to retain in the second step dimension reduction</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><dl class="simple">
-<dt>The output dataset containing the model results, with dimensions:</dt><dd><ul class="simple">
+<dd class="field-even"><p><p>The output dataset containing the model results, with dimensions:</p>
+<ul class="simple">
 <li><p>curve_id (length equal to the number of time points divided by curve_time_points, rounded down)</p></li>
 <li><p>coef_id (length equal to num_factors)</p></li>
 </ul>
-</dd>
-</dl>
 <p>Each of the input spatial variables will have a corresponding variable of the same name, with dimensions
 (“curve_id”, “coef_id”).
 The input spatial_ref variable and its CRS metadata are preserved as a coordinate, if present.
@@ -216,7 +212,7 @@ point, while this logs a single warning per variable.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>np.ndarray</em>) – Array of shape (n_points, n_times).</p></li>
 <li><p><strong>curve_time_points</strong> (<em>int</em>) – Number of time points in one curve.</p></li>
-<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Variable name, used only in the warning.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Variable name, used only in the warning.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>

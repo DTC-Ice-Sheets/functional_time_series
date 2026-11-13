@@ -80,9 +80,13 @@
 <p>The <code class="docutils literal notranslate"><span class="pre">functional_time_series</span></code> module is a sub-component of the
 <a class="reference external" href="https://dtc-ice-sheets.org/">Digital Twin Component for Ice Sheets (DTC-IS)</a>, an ESA-funded, EO-driven digital twin
 project.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">functional_time_series</span></code> module fits a <cite>Functional Time Series</cite> to an input field of surface meltwater runoff or
-supraglacial lake intensity. It was developed to provide hydropower insights for the Watson River catchment area in
-the Greenland ice sheet.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">functional_time_series</span></code> module reduces a panel of space-time ice-sheet data to a few coefficients per
+cycle. Each point’s series is cut into curves - melt seasons, typically - and the whole panel is compressed, so
+that a season at every location becomes a handful of numbers usable as a predictor alongside other variables.
+It usually runs on the output of the
+<a class="reference external" href="https://github.com/DTC-Ice-Sheets/gaussian_random_field">gaussian_random_field</a> module.</p>
+<p>It was developed to provide hydropower insights for the Watson River catchment on the Greenland ice sheet,
+where it compresses each melt season of a supraglacial lake record into a predictor of river discharge.</p>
 <p>For a more interactive way of exploring the system, please visit the digital twin’s
 <a class="reference external" href="https://dashboards.dtc-ice-sheets.org/">dashboard</a> and/or explore the <a class="reference external" href="https://colab.research.google.com/github/DTC-Ice-Sheets/dtc_is_notebooks/">notebooks</a>.</p>
 <p>The remainder of this documentation page provides an overview of the <code class="docutils literal notranslate"><span class="pre">functional_time_series</span></code> module and details

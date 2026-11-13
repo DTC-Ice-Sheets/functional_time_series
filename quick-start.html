@@ -126,7 +126,8 @@ variable for each analyzed input variable, with dimensions <code class="docutils
 steps that do not make a whole curve are omitted.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">--num_pca</span></code></dt><dd><p>Number of principal components to retain in the first dimension-reduction
-step (default: <code class="docutils literal notranslate"><span class="pre">2</span></code>).</p>
+step (default: <code class="docutils literal notranslate"><span class="pre">2</span></code>). Only the first component of each point feeds the
+second step, so this does not change the result.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">--num_factors</span></code></dt><dd><p>Number of factors, and therefore output coefficients, to retain in the
 second dimension-reduction step (default: <code class="docutils literal notranslate"><span class="pre">3</span></code>).</p>
@@ -137,7 +138,6 @@ second dimension-reduction step (default: <code class="docutils literal notransl
 <span class="w">   </span>--data_path<span class="w"> </span>tests/test_data/test_inputs/watson_runoff_racmo55_grf_output.zarr<span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>--output_path<span class="w"> </span>output/watson_runoff_racmo55_fts_custom.zarr<span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>--curve_time_points<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span>--num_pca<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>--num_factors<span class="w"> </span><span class="m">6</span>
 </pre></div>
 </div>
