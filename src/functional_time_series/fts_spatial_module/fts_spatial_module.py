@@ -110,7 +110,7 @@ class FtsSpatialModule:
             Array of shape (n_points, n_times).
         curve_time_points : int
             Number of time points in one curve.
-        name : str, optional
+        name : str
             Variable name, used only in the warning.
 
         Returns
@@ -145,25 +145,29 @@ class FtsSpatialModule:
         ds : xr.Dataset
             The input dataset for analysis.
             This must have the following dimensions:
-                - time
-                - point_id (flattened spatial coordinates)
+
+            - time
+            - point_id (flattened spatial coordinates)
+
             Each of the spatial variables with dimensions ("time", "point_id") will be analyzed.
             A gridded dataset with x and y dimensions in place of point_id is accepted too, and is
             flattened by :func:`as_point_cloud` first.
-        curve_time_points : int, optional
+        curve_time_points : int
             Number of time points to be considered as a single curve
-        num_pca : int, optional
+        num_pca : int
             Number of principal components to retain. Only the first feeds the second step, so this does
             not change the result.
-        num_factors: int, optional
+        num_factors: int
             Number of factors to retain in the second step dimension reduction
 
         Returns
         -------
         xr.Dataset
             The output dataset containing the model results, with dimensions:
-                - curve_id (length equal to the number of time points divided by curve_time_points, rounded down)
-                - coef_id (length equal to num_factors)
+
+            - curve_id (length equal to the number of time points divided by curve_time_points, rounded down)
+            - coef_id (length equal to num_factors)
+
             Each of the input spatial variables will have a corresponding variable of the same name, with dimensions
             ("curve_id", "coef_id").
             The input spatial_ref variable and its CRS metadata are preserved as a coordinate, if present.

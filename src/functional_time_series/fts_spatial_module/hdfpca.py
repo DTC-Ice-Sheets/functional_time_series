@@ -29,7 +29,7 @@ def flat_top_weight(x: float, c: float = 0.5) -> float:
     ----------
     x : float
         Point at which to evaluate the kernel.
-    c : float, optional
+    c : float
         Half-width of the flat top.
 
     Returns

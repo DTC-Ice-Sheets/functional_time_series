@@ -54,7 +54,8 @@ The following options are optional:
    steps that do not make a whole curve are omitted.
 ``--num_pca``
    Number of principal components to retain in the first dimension-reduction
-   step (default: ``2``).
+   step (default: ``2``). Only the first component of each point feeds the
+   second step, so this does not change the result.
 ``--num_factors``
    Number of factors, and therefore output coefficients, to retain in the
    second dimension-reduction step (default: ``3``).
@@ -67,5 +68,4 @@ For example, to use 8 time steps per curve and retain 6 factors:
       --data_path tests/test_data/test_inputs/watson_runoff_racmo55_grf_output.zarr \
       --output_path output/watson_runoff_racmo55_fts_custom.zarr \
       --curve_time_points 8 \
-      --num_pca 4 \
       --num_factors 6
